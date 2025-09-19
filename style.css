@@ -1,0 +1,35 @@
+.hero {
+    background: url(https://media.istockphoto.com/id/515070431/photo/hamburgers-and-hotdogs-cooking-on-flaming-grill.webp?a=1&b=1&s=612x612&w=0&k=20&c=7g-W3IBwJCkr0lbDONWELd3K32JDt2LD7iUgKOt-kUI=)no-repeat center center/cover;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+
+}
+.hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+    footer a:hover {
+      color: #fff;
+    }
